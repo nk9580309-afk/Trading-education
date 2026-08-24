@@ -1,167 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harsh Bhagat | Trading Insights & Education</title>
-    
-    <!-- Meta Pixel Placeholder (Insert ID if you have one) -->
-    <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'REPLACE_WITH_YOUR_PIXEL_ID'); 
-    fbq('track', 'PageView');
-    </script>
-
-    <style>
-        :root {
-            --bg: #0b0e14;
-            --card-bg: #151921;
-            --primary: #38bdf8;
-            --accent: #22c55e;
-            --text-main: #ffffff;
-            --text-dim: #94a3b8;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, sans-serif;
-            background-color: var(--bg);
-            color: var(--text-main);
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            line-height: 1.6;
-        }
-
-        .wrapper {
-            width: 90%;
-            max-width: 450px;
-            text-align: center;
-        }
-
-        .main-card {
-            background: var(--card-bg);
-            padding: 40px 25px;
-            border-radius: 24px;
-            border: 1px solid #2d3748;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-        }
-
-        .profile-img {
-            width: 80px;
-            height: 80px;
-            background: var(--primary);
-            border-radius: 50%;
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 24px;
-            color: #000;
-        }
-
-        h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
-
-        .tagline {
-            color: var(--primary);
-            font-weight: 600;
-            font-size: 14px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            display: block;
-        }
-
-        p {
-            color: var(--text-dim);
-            font-size: 16px;
-            margin-bottom: 30px;
-        }
-
-        .feature-list {
-            text-align: left;
-            margin-bottom: 30px;
-            font-size: 14px;
-            color: var(--text-dim);
-            list-style: none;
-            padding: 0;
-        }
-
-        .feature-list li {
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-        }
-
-        .feature-list li::before {
-            content: "✓";
-            color: var(--accent);
-            margin-right: 10px;
-            font-weight: bold;
-        }
-
-        .btn {
-            display: block;
-            background: var(--accent);
-            color: white;
-            padding: 18px;
-            border-radius: 12px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 18px;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 20px rgba(34, 197, 94, 0.2);
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 25px rgba(34, 197, 94, 0.4);
-            filter: brightness(1.1);
-        }
-
-        .disclaimer {
-            margin-top: 25px;
-            font-size: 11px;
-            color: #4b5563;
-            line-height: 1.4;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Harsh Bhagat Trading | Trading Education</title>
+<meta name="description" content="Harsh Bhagat Trading — structured trading education covering technical analysis, risk management and trading psychology.">
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'YOUR_PIXEL_ID');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<style>
+:root{--bg:#050807;--panel:#0d1511;--green:#39ff14;--yellow:#ffd21c;--text:#f5f7f6;--muted:#aab5ae;--line:rgba(255,255,255,.1)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,Arial,sans-serif;background:radial-gradient(circle at 80% 10%,rgba(57,255,20,.1),transparent 28%),var(--bg);color:var(--text);line-height:1.5}
+a{text-decoration:none;color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 20px}
+nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+.top{position:sticky;top:0;z-index:10;background:rgba(5,8,7,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.brand{font-weight:900;font-size:20px}.brand span{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:12px;background:linear-gradient(135deg,var(--green),#18d77a);color:#031006;font-weight:900;box-shadow:0 12px 30px rgba(57,255,20,.16)}
+.hero{padding:70px 0 45px}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}
+.tag{display:inline-block;color:#baffad;border:1px solid rgba(57,255,20,.3);background:rgba(57,255,20,.06);border-radius:999px;padding:7px 12px;font-size:13px;font-weight:800;margin-bottom:18px}
+h1{font-size:clamp(43px,6vw,74px);line-height:1;letter-spacing:-2.5px}h1 span{color:var(--green)}
+.hero p{margin:20px 0 25px;color:var(--muted);font-size:18px;max-width:650px}
+.pills{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.pill{border:1px solid var(--line);border-radius:999px;padding:7px 10px;color:#d8e0db;font-size:13px}
+.media{min-height:430px;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:#0b110e;display:flex;align-items:center;justify-content:center}
+.media video{width:100%;height:100%;min-height:430px;object-fit:cover}
+section{padding:70px 0}h2{text-align:center;font-size:clamp(30px,4vw,45px);margin-bottom:10px}.sub{text-align:center;color:var(--muted);max-width:720px;margin:0 auto 34px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{padding:23px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(160deg,rgba(255,255,255,.05),rgba(255,255,255,.015))}
+.icon{font-size:28px;margin-bottom:10px}.card p{color:var(--muted);font-size:14px}.card h3{margin-bottom:7px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:25px}.box{padding:30px;border:1px solid var(--line);border-radius:22px;background:var(--panel)}.box h3{font-size:27px;margin-bottom:16px}
+.features{display:grid;gap:12px}.features b{color:var(--green);margin-right:8px}
+.cta{text-align:center;padding:45px 22px;border-radius:24px;background:linear-gradient(135deg,#0d2417,#0a120e);border:1px solid rgba(57,255,20,.2)}
+.cta p{color:var(--muted);max-width:650px;margin:0 auto 22px}
+.disclaimer{margin-top:30px;padding:17px;border-left:3px solid var(--yellow);background:rgba(255,210,28,.05);color:#bac3be;font-size:12px}
+footer{padding:30px 0 45px;border-top:1px solid var(--line);color:#8e9892;font-size:13px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:850px){.hero-grid,.two{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.hero{padding-top:45px}h1{letter-spacing:-1.5px}}
+</style>
 </head>
 <body>
+<header class="top"><div class="wrap"><nav>
+<div class="brand">HARSH <span>TRADING</span> INDIA</div>
+<a class="btn tg" href="#join">Join Telegram</a>
+</nav></div></header>
 
-    <div class="wrapper">
-        <div class="main-card">
-            <div class="profile-img">HB</div>
-            <span class="tagline">Educational Community</span>
-            <h1>Advance Your Market Analysis</h1>
-            <p>Master the art of Price Action and Strategic Risk Management with our daily educational breakdowns.</p>
-            
-            <ul class="feature-list">
-                <li>Daily Institutional Market Insights</li>
-                <li>Strategic Risk Management Guides</li>
-                <li>Real-time Price Action Analysis</li>
-                <li>Educational Community Support</li>
-            </ul>
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div>
+<div class="tag">📈 TRADING EDUCATION • HINGLISH</div>
+<h1>Trading ko <span>step-by-step</span> samjho.</h1>
+<p>Technical analysis, price action, risk management aur trading psychology ko structured way mein learn karein.</p>
+<a class="btn tg" href="#join">FREE TELEGRAM COMMUNITY →</a>
+<div class="pills"><span class="pill">Technical Analysis</span><span class="pill">Risk Management</span><span class="pill">Trading Psychology</span><span class="pill">Money Management</span></div>
+</div>
+<div class="media">
+<video controls playsinline poster="assets/1.png">
+<source src="assets/0810.mp4" type="video/mp4">
+Your browser does not support video.
+</video>
+</div>
+</div></section>
 
-            <a href="https://t.me/harshbhagat06" class="btn" onclick="fbq('track', 'Lead');">
-                Access Telegram Channel
-            </a>
-        </div>
+<section><div class="wrap">
+<h2>What You'll Learn</h2><p class="sub">Focus on knowledge, process and risk awareness—not unrealistic profit promises.</p>
+<div class="grid">
+<div class="card"><div class="icon">📊</div><h3>Technical Analysis</h3><p>Charts, trends, support/resistance and structured analysis concepts.</p></div>
+<div class="card"><div class="icon">🛡️</div><h3>Risk Management</h3><p>Position sizing, risk/reward and capital-protection principles.</p></div>
+<div class="card"><div class="icon">🧠</div><h3>Trading Psychology</h3><p>Build discipline and understand how emotions affect decisions.</p></div>
+<div class="card"><div class="icon">💰</div><h3>Money Management</h3><p>Practical frameworks for managing trading capital responsibly.</p></div>
+</div></div></section>
 
-        <div class="disclaimer">
-            <strong>Disclaimer:</strong> This channel is for educational purposes only. Trading involves significant risk. We do not provide financial advice or guaranteed returns. This site is not part of the Facebook website or Meta Platforms, Inc.
-        </div>
-    </div>
+<section><div class="wrap two">
+<div class="box"><h3>Harsh Bhagat Trading Education</h3><div class="features">
+<div><b>✓</b> Structured beginner-to-advanced lessons</div>
+<div><b>✓</b> Practical chart-learning concepts</div>
+<div><b>✓</b> Risk & money-management framework</div>
+<div><b>✓</b> Trading psychology fundamentals</div>
+<div><b>✓</b> Hinglish learning format</div>
+<div><b>✓</b> Telegram community updates</div>
+</div></div>
+<div class="box"><h3>Learn before you risk.</h3><p style="color:var(--muted);margin-bottom:22px">Trading involves substantial risk. This program teaches concepts and disciplined decision-making; it does not promise returns.</p><a class="btn tg" href="#join">Explore Free Learning →</a></div>
+</div></section>
 
+<section id="join"><div class="wrap">
+<div class="cta"><h2>Join Our Telegram Community</h2><p>Free educational content, updates and course information.</p>
+<a class="btn tg" href="https://t.me/harshbhagat06" target="_blank" rel="noopener">✈ JOIN TELEGRAM</a></div>
+<div class="disclaimer"><strong>Disclaimer:</strong> Harsh Bhagat Trading provides educational content only. We are not SEBI registered advisory services. Nothing here is personalized investment advice or a guarantee of profit. Trading and investing involve risk of capital loss.</div>
+</div></section>
+</main>
+
+<footer><div class="wrap foot"><div>© 2026 Harsh Bhagat Trading.</div><div>Privacy Policy · Terms · Contact</div></div></footer>
+
+<script>
+const TELEGRAM_URL="https://t.me/harshbhagat06";
+document.querySelectorAll(".tg").forEach(a=>{
+ a.href=TELEGRAM_URL;
+ a.addEventListener("click",()=>{if(typeof fbq==="function")fbq("trackCustom","TelegramClick")});
+});
+</script>
 </body>
 </html>
