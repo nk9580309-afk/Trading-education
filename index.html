@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Harsh Bhagat Trading | Trading Education</title>
 <meta name="description" content="Harsh Bhagat Trading — structured trading education covering technical analysis, risk management and trading psychology.">
+
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -14,13 +16,14 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', 'YOUR_PIXEL_ID');
+fbq('init', '1619002932936865');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1619002932936865&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+
 <style>
 :root{--bg:#050807;--panel:#0d1511;--green:#39ff14;--yellow:#ffd21c;--text:#f5f7f6;--muted:#aab5ae;--line:rgba(255,255,255,.1)}
 *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
@@ -53,7 +56,7 @@ footer{padding:30px 0 45px;border-top:1px solid var(--line);color:#8e9892;font-s
 <body>
 <header class="top"><div class="wrap"><nav>
 <div class="brand">HARSH <span>TRADING</span> INDIA</div>
-<a class="btn tg" href="#join">Join Telegram</a>
+<a class="btn tg" data-btn-name="Navbar Join Telegram" href="https://t.me/+FDi0WNcDcWc0YWRl" target="_blank" rel="noopener">Join Telegram</a>
 </nav></div></header>
 
 <main>
@@ -62,7 +65,7 @@ footer{padding:30px 0 45px;border-top:1px solid var(--line);color:#8e9892;font-s
 <div class="tag">📈 TRADING EDUCATION • HINGLISH</div>
 <h1>Trading ko <span>step-by-step</span> samjho.</h1>
 <p>Technical analysis, price action, risk management aur trading psychology ko structured way mein learn karein.</p>
-<a class="btn tg" href="#join">FREE TELEGRAM COMMUNITY →</a>
+<a class="btn tg" data-btn-name="Hero Join Telegram" href="https://t.me/+FDi0WNcDcWc0YWRl" target="_blank" rel="noopener">FREE TELEGRAM COMMUNITY →</a>
 <div class="pills"><span class="pill">Technical Analysis</span><span class="pill">Risk Management</span><span class="pill">Trading Psychology</span><span class="pill">Money Management</span></div>
 </div>
 <div class="media">
@@ -91,12 +94,13 @@ Your browser does not support video.
 <div><b>✓</b> Hinglish learning format</div>
 <div><b>✓</b> Telegram community updates</div>
 </div></div>
-<div class="box"><h3>Learn before you risk.</h3><p style="color:var(--muted);margin-bottom:22px">Trading involves substantial risk. This program teaches concepts and disciplined decision-making; it does not promise returns.</p><a class="btn tg" href="#join">Explore Free Learning →</a></div>
+<div class="box"><h3>Learn before you risk.</h3><p style="color:var(--muted);margin-bottom:22px">Trading involves substantial risk. This program teaches concepts and disciplined decision-making; it does not promise returns.</p>
+<a class="btn tg" data-btn-name="Features Explore Learning" href="https://t.me/+FDi0WNcDcWc0YWRl" target="_blank" rel="noopener">Explore Free Learning →</a></div>
 </div></section>
 
 <section id="join"><div class="wrap">
 <div class="cta"><h2>Join Our Telegram Community</h2><p>Free educational content, updates and course information.</p>
-<a class="btn tg" href="https://t.me/+FDi0WNcDcWc0YWRl" target="_blank" rel="noopener">✈ JOIN TELEGRAM</a></div>
+<a class="btn tg" data-btn-name="Footer Join Telegram" href="https://t.me/+FDi0WNcDcWc0YWRl" target="_blank" rel="noopener">✈ JOIN TELEGRAM</a></div>
 <div class="disclaimer"><strong>Disclaimer:</strong> Harsh Bhagat Trading provides educational content only. We are not SEBI registered advisory services. Nothing here is personalized investment advice or a guarantee of profit. Trading and investing involve risk of capital loss.</div>
 </div></section>
 </main>
@@ -104,10 +108,22 @@ Your browser does not support video.
 <footer><div class="wrap foot"><div>© 2026 Harsh Bhagat Trading.</div><div>Privacy Policy · Terms · Contact</div></div></footer>
 
 <script>
-const TELEGRAM_URL="https://t.me/+FDi0WNcDcWc0YWRl";
-document.querySelectorAll(".tg").forEach(a=>{
- a.href=TELEGRAM_URL;
- a.addEventListener("click",()=>{if(typeof fbq==="function")fbq("trackCustom","TelegramClick")});
+document.querySelectorAll(".tg").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const buttonName = btn.getAttribute("data-btn-name") || "Join Telegram";
+    
+    if (typeof fbq === "function") {
+      // Fires standard Lead event for Meta Ad campaign optimization
+      fbq("track", "Lead", {
+        content_name: buttonName,
+        destination: "Telegram"
+      });
+      // Fires custom event as secondary tracking
+      fbq("trackCustom", "TelegramClick", {
+        button_location: buttonName
+      });
+    }
+  });
 });
 </script>
 </body>
